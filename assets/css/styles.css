@@ -309,9 +309,11 @@ img{
 .portfolio__img{
     position: relative;
     overflow: hidden;
+    
 }
 .portfolio__img img{
     border-radius: .5rem;
+    border: 1px solid #e0e0e0;
 }
 .portfolio__link{
     position: absolute;
