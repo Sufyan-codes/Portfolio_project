@@ -9,7 +9,7 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: hsl(207, 65%, 65%);
+    --first-color: hsl(208, 77%, 19%);
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -127,6 +127,15 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
+.white__gradient {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(255, 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+}
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
@@ -152,6 +161,8 @@ img{
 }
 .nav__logo{
     color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 .nav__toggle{
     color: var(--white-color);
@@ -187,22 +198,34 @@ img{
 }
 .home__title{
     align-self: flex-end;
-    font-size: var(--big-font-size);
+    font-size: 5rem;
     color: var(--white-color);
-    line-height: .8;
+    line-height: 5rem;
 }
 .home__title span{
     text-shadow: 0 20px 25px rgba(0,0,0,.5);
+}
+
+.home__text {
+    color: var(--white-color);
+    margin-top: 1.5rem;
+}
+
+.follow {
+    padding-bottom: 1rem;
 }
 .home__scroll{
     align-self: flex-end;
     padding-bottom: var(--mb-4);
 }
 .home__scroll-link{
+    font-size: 2rem;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
 }
+
+
 .home__img{
     position: absolute;
     right: 0;
@@ -351,7 +374,8 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: var(--first-color);
+    color: var(--white-color);
 }
 .footer__container{
     row-gap: 2rem;
@@ -363,13 +387,15 @@ img{
 }
 .footer__link{
     padding: .25rem 0;
+    color: var(--white-color);
 }
 .footer__link:hover{
-    color: var(--first-color);
+    color: rgb(182, 182, 182);
 }
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
+    color: var(--white-color);
 }
 .footer__social:hover{
     color: var(--first-color);
@@ -628,3 +654,21 @@ img{
     bottom: 2.8rem;
     left: 1.5rem;
   }
+
+  ::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(207, 4%, 75%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(207, 4%, 65%);
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(207, 4%, 55%);
+    border-radius: .5rem;
+  }
+  
+  
