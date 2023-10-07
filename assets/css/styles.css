@@ -231,7 +231,9 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 595px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: hsl(208, 89%, 7%);
 }
 
 /* ===== ABOUT =====*/
@@ -409,10 +411,11 @@ img{
 /* For small devices */
 @media screen and (max-width: 767px) {
   .home__img {
-    width: 330px;
+    width: 200px;
     margin: 0 auto;
     left: 0;
     right: 0;
+    top: 30rem;
   }
 
   .home__container {
@@ -425,6 +428,13 @@ img{
 
   .home__text {
     font-size: 1.2rem;
+  }
+
+  .follow {
+position:absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
   }
 }
 
