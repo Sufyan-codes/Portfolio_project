@@ -9,7 +9,7 @@
 /*===== Colores =====*/
 :root{
     --first-color: #5361FF;
-    --white-color: #FAFAFF;
+    --white-color: #2a3b47;
     --dark-color: #2a3b47;
     --text-color: #697477;
 }
@@ -139,6 +139,7 @@ img{
     }
     &__item{
         margin-bottom: var(--mb-4);
+        color: var(--dark-color);
     }
     &__link{
         position: relative;
@@ -149,10 +150,10 @@ img{
         }
     }
     &__logo{
-        color: var(--white-color);
+        color: var(--dark-color);
     }
     &__toggle{
-        color: var(--white-color);
+        color: var(--dark-color);
         font-size: 1.5rem;
         cursor: pointer;
     }
@@ -218,6 +219,8 @@ img{
         justify-items: center;
         row-gap: 2rem;
         text-align: center;
+        display: grid;
+    grid-template-columns: 1fr 4fr;
     }
     &__img{
         display: flex;
