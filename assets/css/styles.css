@@ -239,8 +239,9 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 400px;
-    border-radius: 50%;
+    width: 200px;
+    height: 500px;
+    border-radius: 5%;
     background-color: hsl(208, 89%, 7%);
 }
 
@@ -581,6 +582,7 @@ position:absolute;
     .home__container {
         height: 640px;
     }
+
 
     /* .home__title {
         font-size: 3rem;
